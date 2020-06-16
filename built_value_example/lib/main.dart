@@ -42,7 +42,7 @@ class MyHomePageState extends State<MyHomePage> {
 
     setState(() {
       _person = serializers.deserializeWith(
-          Person.serializer, JSON.decode(json));
+          Person.serializer, jsonDecode(json));
     });
   }
 
